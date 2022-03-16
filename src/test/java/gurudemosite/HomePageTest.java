@@ -20,6 +20,15 @@ public class HomePageTest extends Base {
 	}
 	
 	@Test (priority=6,enabled=false,description="Validation of Home Page Title")
+	public void homePageTitle_Duplicate()
+	{
+		String expectedTitle = "Guru99 Bank Manager HomePage";
+		String pageTitle = driver.getTitle();
+		System.out.println("pageTitle "+pageTitle);
+		assertEquals(pageTitle,expectedTitle);
+	}
+	
+	@Test (priority=6,enabled=false,description="Validation of Home Page Title")
 	public void homePageTitle()
 	{
 		String expectedTitle = "Guru99 Bank Manager HomePage";
